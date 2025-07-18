@@ -135,6 +135,14 @@ Usa i *signed URL* per distribuire contenuti privati senza esporre S3 al pubbli
 
 ---
 
+### Edge location (cache)
+Le **edge location** di AWS sono i nodi periferici della rete globale AWS in cui vengono erogati servizi a bassissima latenza, in particolare: <br>
+Amazon CloudFront distribuisce contenuti statici e dinamici (file, API, video) servendoli dalla edge più vicina all’utente, riducendo tempi di download e alleggerendo l’origine. <br> 
+AWS Shield e WAF operano a livello edge, bloccando DDoS e traffico malevolo prima che raggiunga la tua VPC. <br>
+Route 53 e Global Accelerator sfruttano la stessa infrastruttura edge per risoluzione DNS rapida e instradamento ottimizzato del traffico. <br>
+
+---
+
 ### Storage Gateway (porta)
 
 File Gateway presenta S3 come condivisione SMB/NFS. <br>
