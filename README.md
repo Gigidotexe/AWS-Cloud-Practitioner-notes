@@ -210,10 +210,15 @@ Route 53 e Global Accelerator sfruttano la stessa infrastruttura edge per ri
 
 ---
 
-* **Developer** – email in orari di ufficio, perfetto per lab.
-* **Business** – 24×7, telefono e chat, consigli architetturali, tutto Trusted Advisor.
-* **Enterprise On‑Ramp** – aggiunge concierge e gestione proattiva degli eventi.
-* **Enterprise** – SLA 15 min per incidenti P1, Technical Account Manager dedicato.
+Piano **Basicr** è incluso gratuitamente con ogni account. Offre l’accesso all’AWS Management Console, alla documentazione ufficiale, ai white‑paper e ai forum pubblici, senza però permettere l’apertura di casi tecnici a un team dedicato. È l’opzione adatta a sperimentazioni iniziali o progetti personali che non necessitano di assistenza diretta da parte di ingegneri AWS. <br>
+
+Piano **Developer** rappresenta il primo gradino a pagamento. Consente di inviare ticket illimitati per problematiche di “how‑to” e domande tecniche, con un tempo di prima risposta entro 24 ore per i casi di bassa severità e entro 12 ore per quelli normali. Il contatto avviene esclusivamente via console e la consulenza architetturale è limitata, ma è perfetto per ambienti di sviluppo e test dove un downtime non comporta impatti immediati sul business. <br> 
+
+Piano **Business** è pensato per applicazioni in produzione. Garantisce supporto 24/7 via console, telefono e chat, con tempi di risposta fino a un’ora per i casi critici (severità Urgent) e accesso a tutti i controlli avanzati di Trusted Advisor. Include l’assistenza di ingegneri del supporto che offrono best practice, guidance sulle architetture, monitoraggio proattivo dei limiti di servizio e, se necessario, escalation immediata ai team interni AWS. <br>
+
+Piano **Enterprise On‑Ramp** colma il divario tra Business ed Enterprise completo. Prevede una prima risposta in 30 minuti per i casi Urgent, un pool di Senior Cloud Support Engineers specializzati e revisioni mensili dell’architettura dei workload critici. È ideale per organizzazioni che stanno passando da un singolo progetto a più workload di produzione ad alta disponibilità ma non richiedono ancora il livello di coinvolgimento continuo previsto dal piano Enterprise. <br>
+
+Piano **Enterprise** è il livello più avanzato. Ogni cliente riceve un Technical Account Manager (TAM) dedicato che agisce da consulente di fiducia, pianificando revisioni periodiche, ottimizzazioni dei costi e prove di resilienza. I tempi di risposta scendono fino a quindici minuti per le emergenze a impatto aziendale e sono inclusi servizi proattivi come Infrastructure Event Management per l’assistenza prima, durante e dopo lanci critici o migrazioni su larga scala. <br>
 
 ---
 
