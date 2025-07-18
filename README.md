@@ -137,8 +137,8 @@ Usa i *signed URL* per distribuire contenuti privati senza esporre S3 al pubbli
 
 ### Storage Gateway (porta)
 
-AWS Storage Gateway è il servizio ibrido che fa da ponte fra gli ambienti on‑premises e lo storage cloud di AWS: <br>
-attraverso una semplice appliance virtuale o hardware, le tue applicazioni locali continuano a parlare NFS, SMB o iSCSI mentre i dati vengono archiviati in S3, trasformati in snapshot EBS o conservati come nastri virtuali in Glacier, con cache locale per mantenere la bassa latenza e cifratura automatica in transito e a riposo.
+AWS Storage Gateway è il servizio ibrido che fa da ponte fra gli ambienti on‑premises e lo storage cloud di AWS. <br>
+Si installa un’appliance hardware o virtuale in locale, le applicazioni continuano a usare NFS, SMB o iSCSI, e i dati vengono archiviati in S3 (o come snapshot EBS) con cache locale per bassa latenza e crittografia automatica in transito e a riposo.
 
 ---
 
