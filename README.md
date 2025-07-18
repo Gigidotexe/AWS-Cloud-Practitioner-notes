@@ -79,7 +79,7 @@ private per app e database.  <br>
 Ogni subnet vive in una singola AZ.  <br>
 Usa **Security Group** (firewall “a stato”) sulle risorse e **NACL** (firewall “lista” sulla subnet) per filtri grossolani.
 
-Un **NAT Gateway** fornisce uscita NAT.  <br>
+Un **NAT Gateway** fornisce uscita NAT verso internet.  <br>
 Aggiungi un **Gateway Endpoint** se vuoi parlare con S3 rimanendo nella rete AWS.  <br>
 Per far dialogare poche VPC si usa il **Peering** e per tante VPC si usa il **Transit Gateway**.  <br>
 **Direct Connect** per connessione diretta dal tuo data‑center.
