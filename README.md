@@ -165,9 +165,12 @@ Tape Gateway elimina le cassette fisiche trasformandole in archivi Glacier.
 
 ---
 
-*Kinesis* è come un tapis roulant per i dati in tempo reale: i “pezzetti” vengono distribuiti in **shard**. <br>
+**Kinesis** serve per lo streaming in tempo reale e permette di raccogliere, trasformare e analizzare flussi di eventi (log, clickstream, metriche IoT, transazioni) con latenze di pochi secondi. <br>
+
+**Kinesis Data Streams** è il cuore del servizio: tu definisci uno stream, suddiviso in shard (unità di throughput). I produttori inviano record con una chiave di partizione; i consumer li leggono in tempo reale o in replay (retention fino a 7 giorni, estendibile). <br> 
 Se noti rallentamenti, aggiungi shard e il throughput raddoppia. <br>
-**Firehose** è la scorciatoia: riceve, comprime, critta, mette in S3 o Redshift senza server da gestire.
+
+**Kinesis Data Firehose** semplifica l’ingest: riceve i dati, li converte (opzionalmente con Lambda) e li consegna “serverless” a destinazioni come S3, OpenSearch, Redshift o Splunk.
 
 ---
 
