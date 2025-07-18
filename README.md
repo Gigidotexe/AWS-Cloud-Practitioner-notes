@@ -114,7 +114,7 @@ l’utente in Italia finisce sull’ELB (Elastic Load Balancer) di Milano grazie
 
 ### S3 (Bucket)
 
-Amazon S3 (Simple Storage Service) è il servizio di storage a oggetti di AWS. <br>
+Amazon S3 (Simple Storage Service) è il servizio di storage (serverless) a oggetti di AWS. <br>
 Permette di salvare file (oggetti) in bucket, accessibili via internet o rete privata, in modo scalabile e sicuro. <br>
 È usato per archiviazione generale, backup, siti web statici, log, big data, ML e altro. <br>
 
@@ -160,7 +160,7 @@ Tape Gateway elimina le cassette fisiche trasformandole in archivi Glacier.
 *ACID* (Atomicità, Coerenza, Isolamento, Durabilità) vale per RDS/Aurora: transazioni SQL, rollback affidabili.
 *BASE* (Basic Available, Soft‑state, Eventual) descrive DynamoDB: altissima disponibilità, replica multi‑regione e coerenza forte opzionale.
 
-* DynamoDB: chiave‑partizione = velocità. Usa **On‑Demand** per carichi imprevedibili, **Provisioned + Autoscaling** per base stabile.  Le **Global Tables** replicano in più regioni senza replica custom.
+* DynamoDB (serverless non relazionale): chiave‑partizione = velocità. Usa **On‑Demand** per carichi imprevedibili, **Provisioned + Autoscaling** per base stabile.  Le **Global Tables** replicano in più regioni senza replica custom.
 * Aurora: storage distribuito in 6 copie su 3 AZ. La funzione **Backtrack** regredisce il DB di minuti/ore senza restore da backup.
 * Neptune: pensato per grafi (relazioni molti‑a‑molti) con linguaggi Gremlin/SPARQL.
 * ElastiCache: Redis in‑memory dà letture microsecondo. Con *Global Datastore* replichi le chiavi oltre oceano.
