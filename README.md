@@ -135,14 +135,6 @@ Usa i *signed URL* per distribuire contenuti privati senza esporre S3 al pubbli
 
 ---
 
-### Edge location (cache)
-Le **edge location** di AWS sono i nodi periferici della rete globale AWS in cui vengono erogati servizi a bassissima latenza, in particolare: <br>
-Amazon CloudFront distribuisce contenuti statici e dinamici (file, API, video) servendoli dalla edge più vicina all’utente, riducendo tempi di download e alleggerendo l’origine. <br> 
-AWS Shield e WAF operano a livello edge, bloccando DDoS e traffico malevolo prima che raggiunga la tua VPC. <br>
-Route 53 e Global Accelerator sfruttano la stessa infrastruttura edge per risoluzione DNS rapida e instradamento ottimizzato del traffico. <br>
-
----
-
 ### Storage Gateway (porta)
 
 File Gateway presenta S3 come condivisione SMB/NFS. <br>
@@ -184,14 +176,31 @@ Se noti rallentamenti, aggiungi shard e il throughput raddoppia. <br>
 
 <br>
 
-## 🟠 Region, AZ & Edge
+## 🟠 Region, Avaiability Zone, Local Zone & Edge Location
 
 ---
+
+**Regions**
+Grandi aree geografiche isolate fra loro (p. es. eu‑central‑1 a Francoforte, us‑east‑1 in Virginia). <br>
+Ogni Regione ospita più zone di disponibilità e rappresenta il confine entro cui vengono replicati i dati e applicate le policy di residenza. <br>
+
+**Availability Zones**
+Data center o campus di data center fisicamente separati ma connessi da reti private ad altissima velocità dentro la stessa Regione. <br>
+Progettate per eliminare singoli punti di guasto: distribuendo istanze e servizi su più AZ ottieni alta disponibilità e fail‑over automatico. <br>
+
+**Local Zones**
+Estensioni di una Regione in città metropolitane non ancora coperte da un’intera Regione. Offrono calcolo, storage e servizi di database più vicini agli utenti finali (latenza a singola cifra di millisecondi) e si collegano alla “parent Region” per il piano di controllo e la replica dei dati.
 
 Le **Region** sono città‑capoluogo: isolate l’una dall’altra, con leggi sui dati specifiche. <br>
 Dentro ci sono le **Availability Zone** (quartieri alimentati da diverse centrali elettriche). <br>
 Distribuendo le VM su due AZ ottieni un’app capace di sopravvivere a un incendio in uno dei data‑center.  <br>
-**Local Zone** porta il cloud nelle metropoli, **Wavelength** sotto le antenne 5G, **Outposts** addirittura nel tuo rack.
+**Local Zone** porta il cloud nelle metropoli, **Wavelength** sotto le antenne 5G, **Outposts** addirittura nel tuo rack. <br>
+
+**Edge location** (cache)
+Sono i nodi periferici della rete globale AWS in cui vengono erogati servizi a bassissima latenza, in particolare: <br>
+Amazon CloudFront distribuisce contenuti statici e dinamici (file, API, video) servendoli dalla edge più vicina all’utente, riducendo tempi di download e alleggerendo l’origine. <br> 
+AWS Shield e WAF operano a livello edge, bloccando DDoS e traffico malevolo prima che raggiunga la tua VPC. <br>
+Route 53 e Global Accelerator sfruttano la stessa infrastruttura edge per risoluzione DNS rapida e instradamento ottimizzato del traffico. <br>
 
 ---
 
