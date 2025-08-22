@@ -77,7 +77,8 @@ Definisci un **blocco CIDR** – per esempio `10.0.0.0/16` – e lo dividi in *s
 pubbliche (hanno route verso Internet Gateway) per i load balancer <br>
 private per app e database.  <br>
 Ogni subnet vive in una singola AZ.  <br>
-Usa **Security Group** (firewall “a stato”) sulle risorse e **NACL** (firewall “lista” sulla subnet) per filtri grossolani.
+Usa **Security Group** (firewall “a stato”) sulle risorse e **NACL** (firewall “lista” sulla subnet) per filtri grossolani. <br>
+La VPC consente anche di eseguire il provisioning di una sezione logicamente isolata del cloud AWS in cui è possibile avviare le risorse AWS in una rete virtuale definita. <br>
 
 Un **NAT Gateway** fornisce uscita NAT verso internet.  <br>
 Aggiungi un **Gateway Endpoint** se vuoi parlare con S3 rimanendo nella rete AWS.  <br>
@@ -122,7 +123,7 @@ Tipi di S3: <br>
 **Standard** è la classe base. Dati usati spesso, alta disponibilità e replica su 3 AZ. Nessun vincolo di tempo o costi extra. <br>
 **S3 Standard-IA (Infrequent Access)** per file consultati raramente. Più economica, ma con minimo 30 giorni di conservazione e costo per ogni accesso. <br>
 **S3 One Zone-IA** come la Standard-IA ma i dati sono salvati in una sola AZ. Costa meno, ma è più rischiosa. <br>
-**S3 Glacier** archiviazione a lungo termine. I file sono recuperabili in minuti o ore. Molto economica, adatta a backup mensili o log vecchi. <br>
+**S3 Glacier** archiviazione a lungo termine. I file sono recuperabili in minuti o ore. Molto economica, adatta a backup mensili o log vecchi e file da recuperare occasionalmente. <br>
 **S3 Glacier Deep Archive** la più economica. Per dati archiviati per anni. Il recupero richiede ore e c’è un vincolo minimo di 180 giorni. <br>
 
 ---
@@ -142,6 +143,14 @@ Si installa un’appliance hardware o virtuale in locale, le applicazioni contin
 
 ---
 
+### EFS (Elastic File System
+fornisce un archivio di file semplice e scalabile da utilizzare con Amazon EC2. Con Amazon EFS, la capacità di archiviazione è elastica, cresce e si riduce automaticamente man mano che aggiungi e rimuovi file, quindi le tue applicazioni hanno lo spazio di archiviazione quando ne hanno bisogno. Amazon EFS dispone di una semplice interfaccia per i servizi web che consente di creare e configurare file system in modo semplice e veloce.
+
+---
+
+### RDS  Relational Database Service
+Semplifica la configurazione, il funzionamento e la scalabilità di un database relazionale nel cloud. Fornisce una capacità efficiente in termini di costi e ridimensionabile, automatizzando al contempo attività di amministrazione dispendiose in termini di tempo come provisioning hardware, configurazione di database, patch e backup. Ti consente di concentrarti sulle tue applicazioni in modo da poter offrire loro prestazioni rapide, elevata disponibilità, sicurezza e compatibilità di cui hanno bisogno.
+
 <br>
 
 ## 🔵 Database
@@ -152,7 +161,7 @@ Si installa un’appliance hardware o virtuale in locale, le applicazioni contin
 *BASE* (Basic Available, Soft‑state, Eventual) descrive DynamoDB: altissima disponibilità, replica multi‑regione e coerenza forte opzionale.
 
 * DynamoDB (serverless non relazionale): chiave‑partizione = velocità. Usa **On‑Demand** per carichi imprevedibili, **Provisioned + Autoscaling** per base stabile.  Le **Global Tables** replicano in più regioni senza replica custom.
-* Aurora: storage distribuito in 6 copie su 3 AZ. La funzione **Backtrack** regredisce il DB di minuti/ore senza restore da backup.
+* Aurora: storage distribuito in 6 copie su 3 AZ. La funzione **Backtrack** regredisce il DB di minuti/ore senza restore da backup. É scalabile
 * Neptune: pensato per grafi (relazioni molti‑a‑molti) con linguaggi Gremlin/SPARQL.
 * ElastiCache: Redis in‑memory dà letture microsecondo. Con *Global Datastore* replichi le chiavi oltre oceano.
 
@@ -230,3 +239,16 @@ Piano **Enterprise** è il livello più avanzato. Ogni cliente riceve un Technic
 **AWS Backup** centralizza snapshot e retention; **Elastic Disaster Recovery** replica server completi su AWS per recovery in pochi minuti. 
 
 ---
+
+## Well Architetted
+Il Well-Architected Framework è stato sviluppato per aiutare gli architetti cloud a creare un'infrastruttura sicura, ad alte prestazioni, resiliente ed efficiente per le loro applicazioni. Ciò si basa su sei pilastri e precisamente:
+
+1. Eccellenza Operativa
+2. Sicurezza
+3. Affidabilità
+4. Efficienza Prestazioni
+5. Ottimizzazione Costi
+6. Sostenibilità
+
+---
+
