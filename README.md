@@ -98,6 +98,11 @@ Offre quattro famiglie di bilanciatori: <br>
 
 Può inviare log di accesso a S3 per analisi o fatturazione.
 
+### AWS Batch
+AWS Batch è un servizio regionale che permette di eseguire lavori in blocco (batch) nel cloud senza creare o gestire i server: AWS li avvia e li spegne da solo quando servono. <br>
+È utile per attività pesanti come analisi dati, simulazioni o elaborazioni complesse. <br>
+Tu definisci il lavoro da fare, e lui lo gestisce in automatico. <br>
+
 ---
 
 ### Route 53 (DNS e routing)
