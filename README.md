@@ -37,8 +37,14 @@ Scrivi una **regola di conformità** che segnala subito i bucket senza cifra
 ---
 
 ### CAF
-
-Il percorso cloud non è solo tecnologia. Le sei prospettive **Business, People, Governance, Platform, Security, Operations** ricordano che servono strategia, cultura, controlli finanziari, architettura solida, sicurezza capillare e operazioni continue.
+è una guida completa progettata per aiutare le organizzazioni a pianificare e implementare in modo efficace le proprie strategie di adozione del cloud. <br>
+Il framework affronta i vari aspetti dell'adozione del cloud da diverse prospettive, tra cui: 
+business <br>
+persone <br>
+governance <br> 
+piattaforma <br>
+operazioni <br> 
+sicurezza. <br>
 
 ---
 
